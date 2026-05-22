@@ -91,8 +91,8 @@
             </p>
             <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group transition-opacity hover:opacity-80 z-20">
             <span class="text-[9px] text-slate-600 font-medium tracking-widest uppercase">Explore</span>
-            <div class="w-[1.5px] h-12 bg-slate-800 rounded-full overflow-hidden flex items-end">
-                <div class="w-full h-1/2 bg-white rounded-full animate-bounce-slow"></div>
+            <div class="w-[2px] h-14 bg-slate-900 rounded-full overflow-hidden relative">
+                <div id="scroll-progress-line" class="w-full h-0 bg-white rounded-full transition-all duration-75 ease-out origin-top absolute top-0 left-0"></div>
             </div>
         </a>
     </header>
@@ -584,6 +584,20 @@
 
     sections.forEach((section) => {
         if(section.getAttribute("id")) observer.observe(section);
+    });
+    // 3. INTERACTIVE SCROLL PROGRESS BAR FOR EXPLORE INDICATOR
+    window.addEventListener("scroll", () => {
+        const progressLine = document.getElementById("scroll-progress-line");
+        if (progressLine) {
+            const scrollTop = window.scrollY; // Jarak yang sudah di-scroll ke bawah
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight; // Sisa tinggi dokumen keseluruhan
+            
+            // Hitung persentase scroll dalam bentuk %
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            
+            // Update tinggi garis putih secara dinamis
+            progressLine.style.height = `${scrollPercent}%`;
+        }
     });
 </script>
 </body>
