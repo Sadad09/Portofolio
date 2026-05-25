@@ -85,29 +85,73 @@
         <a href="#contact" class="text-white font-bold bg-white text-slate-950 rounded-full px-4 py-2 text-center" onclick="this.parentElement.classList.add('hidden')">Contact</a>
     </div>
 
-   <header id="home" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-        <img src="bg1.JPG" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-20">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/50 to-slate-950"></div>
-        <div class="max-w-4xl mx-auto px-4 text-center z-10">
-            <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase bg-slate-900 border border-slate-800/60 px-3 py-1 rounded-full shadow-inner">
-                Creative Presentation Folio 2026
-            </span>
-            <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold tracking-tight text-white min-h-[120px] sm:min-h-[auto]">
-                HELLO, I'M <br>
-                <span class="text-white whitespace-nowrap border-r-4 border-white typewriter-text pr-2">
-                    SADAD RASYAD
+   <header id="home" class="min-h-screen pt-24 md:pt-0 flex items-center relative overflow-hidden bg-[#05020d]">
+    
+    <div class="absolute left-10 top-1/4 w-[350px] h-[350px] bg-purple-600/15 blur-[120px] rounded-full pointer-events-none hidden md:block animate-pulse"></div>
+    <div class="absolute right-10 bottom-1/4 w-[450px] h-[450px] bg-blue-600/15 blur-[140px] rounded-full pointer-events-none hidden md:block"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 space-y-6 text-center md:text-left pt-8 md:pt-0">
+                <span class="text-xs font-bold tracking-widest text-purple-300 uppercase bg-purple-950/40 border border-purple-900/50 px-3 py-1.5 rounded-full inline-block backdrop-blur-sm shadow-[0_0_15px_rgba(168,85,247,0.15)]">
+                    Creative Presentation Folio 2026
                 </span>
-            </h1>
-            <p class="mt-6 text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-                I'm actually an International Relations graduate, not a Computer Science major. But hey, I love jumping into the deep end and figuring things out by doing. This website? Pure proof of me hitting my head against the wall until I learned HTML, CSS, and JavaScript. Enjoy scrolling through my brain!
-            </p>
-            <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group transition-opacity hover:opacity-80 z-20">
-            <span class="text-[9px] text-slate-600 font-medium tracking-widest uppercase">Explore</span>
-            <div class="w-[2px] h-14 bg-slate-900 rounded-full overflow-hidden relative">
-                <div id="scroll-progress-line" class="w-full h-0 bg-white rounded-full transition-all duration-75 ease-out origin-top absolute top-0 left-0"></div>
+                
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.05] uppercase select-none text-white">
+                    <span class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">HELLO, I'M</span> <br>
+                    <span class="text-3d-metallic-neon block mt-2 py-2">SADAD RASYAD</span>
+                </h1>
+                
+                <p class="text-sm text-slate-400 leading-relaxed max-w-xl mx-auto md:mx-0 font-medium">
+                    I'm actually an International Relations graduate, not a Computer Science major. But hey, I love jumping into the deep end and figuring things out by doing. This website? Pure proof of me hitting my head against the wall until I learned HTML, CSS, and JavaScript. Enjoy scrolling through my brain!
+                </p>
+                
+                <div class="pt-4">
+                    <a href="#about" class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-white uppercase bg-purple-950/40 border border-purple-800/60 shadow-[0_0_20px_rgba(168,85,247,0.2)] px-5 py-3 rounded-xl hover:bg-white hover:text-black hover:border-white transition-all hover:scale-105 duration-300">
+                        Explore <i class="fa-solid fa-arrow-down text-[10px] animate-bounce"></i>
+                    </a>
+                </div>
             </div>
-        </a>
-    </header>
+
+            <div class="md:col-span-5 flex justify-center items-center relative min-h-[350px]">
+                <div class="relative w-72 sm:w-80 md:w-full max-w-[360px] animate-[float_4s_ease-in-out_infinite]">
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-black/50 blur-md rounded-full animate-[shadow_4s_ease-in-out_infinite]"></div>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L2ZyZWVpbWFnZXNjb21wYW55XzNkX3JlbmRlcl9jaGFyYWN0ZXJfb2ZfbWFuX3BsYXlpbmdfZ2FtZV9vbl9nYV8xZjNhNjNmNi1hNzJkLTRmMjAtOWVjOS0wZjcyMDBiOTM4MGMucG5n.png" 
+                         alt="Sadad 3D" 
+                         class="w-full h-full object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<style>
+    .text-3d-metallic-neon {
+        background: linear-gradient(to bottom, #ffffff 30%, #e2e8f0 60%, #cbd5e1 80%, #94a3b8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 
+            0 1px 0 #94a3b8,
+            0 2px 0 #64748b,
+            0 3px 0 #475569,
+            0 4px 0 #334155,
+            0 5px 0 #1e293b,
+            0 6px 1px rgba(0,0,0,0.4),
+            0 0 10px rgba(59, 130, 246, 0.6),   /* Glow Biru */
+            0 0 30px rgba(147, 51, 234, 0.5),   /* Glow Ungu */
+            0 0 60px rgba(147, 51, 234, 0.3);
+    }
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-16px); }
+    }
+    @keyframes shadow {
+        0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.5; }
+        50% { transform: translateX(-50%) scale(0.85); opacity: 0.25; }
+    }
+</style>
 
  <section id="about" class="py-24 border-t border-slate-900 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
