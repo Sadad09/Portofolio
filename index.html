@@ -85,10 +85,12 @@
         <a href="#contact" class="text-white font-bold bg-white text-slate-950 rounded-full px-4 py-2 text-center" onclick="this.parentElement.classList.add('hidden')">Contact</a>
     </div>
 
-   <header id="home" class="min-h-screen pt-24 md:pt-0 flex items-center relative overflow-hidden bg-[#05020d]">
+  <header id="home" class="min-h-screen pt-24 md:pt-0 flex items-center relative overflow-hidden bg-slate-950">
     
-    <div class="absolute left-10 top-1/4 w-[350px] h-[350px] bg-purple-600/15 blur-[120px] rounded-full pointer-events-none hidden md:block animate-pulse"></div>
-    <div class="absolute right-10 bottom-1/4 w-[450px] h-[450px] bg-blue-600/15 blur-[140px] rounded-full pointer-events-none hidden md:block"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-slate-950 to-transparent pointer-events-none z-20"></div>
+
+    <div class="absolute left-10 top-1/4 w-[350px] h-[350px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none hidden md:block animate-pulse"></div>
+    <div class="absolute right-10 bottom-1/4 w-[450px] h-[450px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none hidden md:block"></div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
@@ -115,16 +117,11 @@
             </div>
 
             <div class="md:col-span-5 flex justify-center md:justify-end items-center relative min-h-[450px] sm:min-h-[550px] pt-12 md:pt-0">
-                
-                <div class="absolute w-[400px] h-[400px] bg-blue-600/20 blur-[130px] rounded-full pointer-events-none hidden md:block"></div>
-
-                <div class="relative w-80 sm:w-96 md:w-[130%] max-w-[500px] -mr-[15%] animate-[float_4s_ease-in-out_infinite] group">
-                    
-                    <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[85%] h-5 bg-black/50 blur-xl rounded-full animate-[shadow_4s_ease-in-out_infinite]"></div>
-                    
+                <div class="relative w-80 sm:w-96 md:w-[130%] max-w-[500px] md:-mr-[15%] animate-[float_4s_ease-in-out_infinite] group z-10">
+                    <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[85%] h-5 bg-black/60 blur-xl rounded-full animate-[shadow_4s_ease-in-out_infinite]"></div>
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/023/456/551/small/3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop-with-thinking-pose-png.png" 
                          alt="Sadad 3D Character" 
-                         class="w-full h-full object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] group-hover:drop-shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                         class="w-full h-full object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] group-hover:drop-shadow-[0_0_25px_rgba(168,85,247,0.35)] transition-all duration-500">
                 </div>
             </div>
 
